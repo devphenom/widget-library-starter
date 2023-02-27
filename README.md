@@ -87,5 +87,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Exports in a [umd](https://github.com/umdjs/umd) format so the library works everywhere.
 
 * Generates a single bundle javascript file.
-* Bundles css into javascript files
-* Allows for easy modification
+
+* Bundles css into javascript files.
+
+* Allows for easy modification.
