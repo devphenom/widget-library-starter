@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+# Widget Library Starter with Create-React-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React boilerplate for creating widget libraries that may be embedded.
+
+# Getting Started
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), [React App Rewired](https://github.com/timarney/react-app-rewired#readme) and [Customize-CRA](https://github.com/lvyue/customize-cra#readme).
+
+## Installation
+
+### Installation
+
+You can get the project on your local computer by either downloading the zip file or cloning it into your preferred directory using the link provided.
+
+- To clone, open your terminal and run the command:
+
+```bash
+  cd ~/Desktop
+  git clone {{the link you just copied}} project-name
+```
+
+- In the Project directory, run:
+
+```bash
+cd ~/Desktop/project-name
+yarn
+```
+
+or
+
+```bash
+cd ~/Desktop/project-name
+npm install
+```
+
+This installs all dependencies.
+
+- Run locally:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Available Scripts
 
@@ -21,13 +62,13 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Using react-app-rewired to build the app for production to the `build` folder.\
+It creates a single javascript file which can then be embedded into your application.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
+The single javascript file `widget.js` contains the javascript file that will be loaded into your application.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -39,32 +80,12 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Have access to CRA boilerplate.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Exports in a [umd](https://github.com/umdjs/umd) format so the library works everywhere.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Generates a single bundle javascript file.
+* Bundles css into javascript files
+* Allows for easy modification
